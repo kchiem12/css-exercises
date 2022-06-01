@@ -9,6 +9,9 @@ body {
 }
 
 .header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -35,14 +38,31 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  margin: 16px;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  margin: 16px;
 }
 
 ul {
+  display: flex;
   list-style-type: none;
+}
+
+.left-side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 8px;
+}
+
+.right-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 8px;
 }
